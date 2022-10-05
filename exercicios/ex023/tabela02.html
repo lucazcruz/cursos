@@ -9,101 +9,226 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        main {
+            width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        main > p {
+            text-align: justify;
+        }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
         }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bolder;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #353535;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 5px;
         }
+
         thead, tfoot {
-            background-color: lightgrey;
+            background-color: #353535;
+            color: white;
         }
+
         .num {
             text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
-    <!--
-        ANATOMIA PARA TABELAS GRANDES
-        TABLE 
-            THEAD
-                TR, RD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
-    -->
-    <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">41 262 199</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">19 597 330</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">15 989 929</td>
-            </tr>
-            <tr>
-                <td>Bahia</td>
-                <td class="num">14 016 906</td>
-            </tr>
-            <tr>
-                <td>Paraná</td>
-                <td class="num">10 444 526</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">10 693 929</td>
-            </tr>
-            <tr>
-                <td>Pernambuco</td>
-                <td class="num">8 796 448</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td class="num">8 452 381</td>
-            </tr>
-            <tr>
-                <td>Pará</td>
-                <td class="num">7 581 051</td>
-            </tr>
-            <tr>
-                <td>Santa Catárina</td>
-                <td class="num">6 248 436</td>
-            </tr>
-            <tr>
-                <td>Góias</td>
-                <td class="num">6 574 789</td>
-            </tr>
-            <tr>
-                <td>Maranhão</td>
-                <td class="num">6 574 789</td>
-            </tr>
-            <tr>
-                <td>Amazonas</td>
-                <td class="num">3 483 985</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>TOTAL DE HABITANTES</th>
-                <th class="num">xxx xxx xxx</th>
-            </tr>
-        </tfoot>
-    </table>
+
+    <main>
+        <h1>Uso de tabelas grandes</h1>
+        <!--
+            ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPTION
+                THEAD
+                    TR, RD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
+        <table>
+            <caption>
+                População das Unidades Federativas
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">15 989 929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">10 444 526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 693 929</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">8 796 448</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 452 381</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">7 581 051</td>
+                </tr>
+                <tr>
+                    <td>Santa Catárina</td>
+                    <td class="num">6 248 436</td>
+                </tr>
+                <tr>
+                    <td>Góias</td>
+                    <td class="num">6 574 789</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">6 574 789</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">3 483 985</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">TOTAL DE HABITANTES</th>
+                    <td class="num"><strong>xxx xxx xxx</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quos officiis autem animi fugiat. Illo, debitis sapiente ullam qui, repellat in consectetur quaerat labore odio vitae magni culpa facere ex!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum voluptates aliquam maiores veniam quo eos ipsa veritatis aut amet, beatae ad quasi saepe commodi. Temporibus quasi minus perferendis nihil? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem labore quae nemo nam est tempora dolorem, quisquam placeat, esse modi magnam quidem. Minima maxime at distinctio culpa, aspernatur quidem nihil. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolores asperiores architecto dolorem adipisci esse, quidem nulla, eligendi quos, quam optio hic quisquam non id corrupti cum magnam consequatur animi!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quos officiis autem animi fugiat. Illo, debitis sapiente ullam qui, repellat in consectetur quaerat labore odio vitae magni culpa facere ex!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum voluptates aliquam maiores veniam quo eos ipsa veritatis aut amet, beatae ad quasi saepe commodi. Temporibus quasi minus perferendis nihil? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem labore quae nemo nam est tempora dolorem, quisquam placeat, esse modi magnam quidem. Minima maxime at distinctio culpa, aspernatur quidem nihil. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolores asperiores architecto dolorem adipisci esse, quidem nulla, eligendi quos, quam optio hic quisquam non id corrupti cum magnam consequatur animi!</p>
+    </main>
 </body>
 </html>
