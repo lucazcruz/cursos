@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+menu{
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+article::after {
+    content: 'Esse artigo foi escrito por mim, 10 do 10 de 2022';
+}
