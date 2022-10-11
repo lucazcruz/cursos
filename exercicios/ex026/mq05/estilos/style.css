@@ -7,16 +7,18 @@
 }
 
 body {
-    background: lightgray;
+    background: rgba(211, 211, 211, 0.719);
 }
 
+header {
+    background-color: darkgray;
+}
 
 header > h1 {
-    background-color: gray;
     text-align: center;
     padding: 30px;
 }
-#imenu {
+#burgue {
     background-color: #2d2d2d;
     color: white;
     display: block;
@@ -24,18 +26,18 @@ header > h1 {
     padding: 10px;
     font-size: 1.5em;
 }
-#imenu:hover {
-    background-color: #b9b9b9;
+#burgue:hover {
+    background-color: #2d2d2da8;
     color: black;
 }
 
-header > menu#itens > ul > li {
+header > #imenu > ul > li {
     list-style-type: none;
-    background-color: lightgray;
+    background-color: #a3a3a3;
     text-align: center;
 }
 
-header > menu#itens > ul > li > a {
+header a {
     text-decoration: none;
     color: black;
     padding: 15px;
@@ -43,17 +45,14 @@ header > menu#itens > ul > li > a {
     display: block;
 }
 
-header > menu > ul > li > a:hover {
-    color: white;
-    background-color: gray;
+header a:hover {
+    color: black;
+    background-color: white;
 }
 
-#itens {
+menu {
     display: none;
     
-}
-#itens2 {
-    display: none;
 }
 
 main {
@@ -74,28 +73,29 @@ article > p {
 }
 
 
-@media screen and (min-width: 600px) {
-    #imenu {
+@media screen and (min-width: 768px) {
+    #burgue {
         display: none;
     }
-
-    #itens2 {
+    menu {
         display: block;
-        background-color: rgb(75, 75, 75);
-        padding: 15px;
+        background-color: #2d2d2d9a;
     }
-    #itens2>a {
-        text-decoration: none;
+    menu ul {
+        margin-left: 20px;
+    }
+    menu > ul > li {
+        display: inline-block
+    }
+    header a {
+        border-bottom: none;
+        background-color: #2d2d2d9a;
         color: white;
-        margin-left: 10px;
-        padding: 15px;
-        
     }
-    #itens2>a:hover {
-        background-color: lightgray;
-        color: black;
-        padding: 15px;
+    header a:hover {
         border-radius: 5px;
-        text-decoration: underline;
+    }
+    main {
+        width: 768px;
     }
 }
