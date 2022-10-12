@@ -24,9 +24,9 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width .3s, width .3s;
 }
 section#img {
@@ -53,14 +53,28 @@ section > form > div {
     border-radius: 5px;
     height: 40px;
 }
+span.material-icons {
+    font-size: 2em;
+    width: 35px;
+    color: black;
+    padding: 4px;
+}
 section > form > div > label {
     display: none;
+}
+section input {
+    border-radius: 5px;
+    border: none;
+    width: calc(100% - 40px);
+    padding: 10px;
+    transform: translateY(-28%);
 }
 
 input[type=submit] {
     display: block;
     width: 100%;
     height: 40px;
+    margin-top: 30px;
     border: none;
     border-radius: 5px;
     background-color: #622c94;
@@ -72,7 +86,6 @@ input[type=submit]:hover {
 }
 
 section > form > a {
-    margin-top: 10px;
     text-decoration: none;
     display: block;
     font-size: 0.8em;
@@ -82,22 +95,27 @@ section > form > a {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
         width: 90vw;
+        height: 300px;
     }
     section#img {
         float: left;
-        width: 30%;
+        width: 40%;
         height: 100%;
     }
     section#login {
         float: right;
-        width: 70%;
+        width: 60%;
         height: 100%;
+    }
+    section#login p {
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 992px) {
     main {
         width: 950px;
+        height: 350px;
     }
     section#img {
         float: left;
@@ -108,5 +126,8 @@ section > form > a {
         float: right;
         width: 50%;
         height: 100%;
+    }
+    section#login p {
+        margin-bottom: 40px;
     }
 }
