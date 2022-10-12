@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>d06 - Projeto Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <title>d06 - Projeto Login</title>
+
 </head>
 <body>
     <main>
@@ -15,7 +17,20 @@
         <section id="login">
             <h1>Login</h1>
             <p>Seja bem-vindo(a), faça login para acessar a sua conta</p>
-            
+            <form action="#" method="post" autocomplete="on">
+                <div>
+                    <span class="material-icons">person</span>
+                    <input type="email" name="email" id="iemail" required maxlength="30" placeholder="seu e-mail" autocomplete="email">
+                    <label for="iemail">Login</label>
+                </div>
+                <div>
+                    <span class="material-icons">key</span>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="sua senha" autocomplete="current-password">
+                    <label for="isenha">Senha</label>
+                </div>
+                <input type="submit" value="Enviar">
+                <a href="#">Esquecia a senha</a>
+            </form>
         </section>
     </main>
 </body>
