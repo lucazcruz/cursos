@@ -33,7 +33,6 @@ body {
     background-repeat: no-repeat;
     height: 40%;
     width: 100%;
-    background-color: tomato;
     border-radius: 10px 10px 0px 0px;
     display: block;
 }
@@ -47,11 +46,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-variant-caps: all-small-caps;
     font-size: 1.2em;
+    letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
 }
 .nome {
     font-family: 'Fraunces', serif;
-    font-weight: 700;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
@@ -63,7 +63,15 @@ body {
 }
 .valor {
     font-family: 'Fraunces', serif;
+    color: #3c8067;
     margin-bottom: 20px;
+    display: inline-block;
+}
+.desconto {
+    font-family: 'montserrat', sans-serif;
+    padding: 10px;
+    color: hsl(212, 21%, 14%);
+
 }
 
 .cart {
@@ -76,5 +84,34 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+.cart:hover {
+    background-color: #1b382d;
+    cursor: pointer;
+}
+svg {
+    transform: translate(-10px, 3px);
+}
 
 
+@media screen and (min-width: 375px) {
+    
+    .container {
+        width: 550px;
+        height: 395px;
+    }
+    .container > .img {
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: contain;
+        border-radius: 10px 0px 0px 10px;
+        float: left;
+        width: 48%;
+        height: 100%;
+    }
+    .container > .compra {
+        float: right;
+        height: 100%;
+        width: 52%;
+        padding: 25px;
+    }
+
+}
