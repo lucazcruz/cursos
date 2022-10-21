@@ -144,7 +144,7 @@ footer p {
     margin-top: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -187,7 +187,7 @@ footer p {
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 500px){
     header {
         padding: 20px;
     }
