@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: start center;
+    height: 100vh;
+}
+
+h2 {
+    background-color: #e7e7e7;
+    border: 1px solid #b7b7b7;
+    margin: 0;
+    margin-right: 20px;
+    padding: 10px;
+    flex-grow: 1; /* divide o espaço lateral igualmente não importando o tamanho do conteudo */
+    flex-basis: 1; 
+    flex-shrink: 0;
+    
+}
