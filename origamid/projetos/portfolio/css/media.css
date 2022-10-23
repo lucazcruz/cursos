@@ -1,10 +1,10 @@
 
 
 @media (max-width: 1000px) {
-    .bloco2 h1 {
+    .container-bloco2 > h1 {
         font-size: 3rem;
     }
-    .section2-bloco1{
+    .container2-bloco1{
         max-width: 4ch;
     }
 }
@@ -30,36 +30,37 @@
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
-    .bloco2 h1 {
-        font-size: 2rem;
-    }
-    .container2-block {
+    .container-block {
         display: block;
     }
-    .bloco3 {
+    .container-bloco2 > h1 {
+        font-size: 2rem;
+    }
+    .container-bloco3 > h2{
         font-size: 3rem;
         word-break: normal;
         color: #000;
         margin-bottom: 40px;
         text-transform: capitalize;
     }
-    .bloco4>p {
+    .container-bloco4 > p {
         font-size: 1.25rem;
     }
-    .container2 {
+    .black {
         padding: 80px 20px 80px 20px;
-        background-color: blue;
     }
-    .container2 .section2 {
+    .container2 {
         display: block;
     }
 
-    .section2-bloco1 {
+    .container2-bloco1 {
         word-break: normal;
         font-size: 3rem;
         margin-bottom: 40px;
+        text-transform: capitalize;
+        color: #fff;
     }
-    .section2-bloco2>p {
+    .container2-bloco2>p {
         font-size: 1.25rem;
     }
     .footer-grid {
@@ -73,5 +74,12 @@
         padding: 20px 0px;
         max-width: 20ch;
     }
-
+    .cursos-img::before {
+        position: static;
+        margin-bottom: 10px;
+    }
+    .idiomas-img::before {
+        position: static;
+        margin-bottom: 10px;
+    }
 }
