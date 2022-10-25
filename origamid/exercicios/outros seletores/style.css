@@ -1,0 +1,19 @@
+label {
+    display: block;
+}
+
+[required] {
+    border: 1px solid red;
+}
+
+[for="inome"] {
+    border: 2px solid blue;
+}
+
+[for^="i"] {
+    color: green;
+}
+
+[href$=".com"] {
+    color: cyan;
+}

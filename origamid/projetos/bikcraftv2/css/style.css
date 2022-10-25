@@ -1,11 +1,33 @@
+:root {
+    --fundo1: #f7f7f7;
+    --fundo2: #fff;
+    --texto: #000;
+    --cor1: #e21;
+    --cor2: #900;
+    --subtitulo: #00000033;
+    --onda: url('../img/onda-light.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo1: #111111;
+        --fundo2: #000000;
+        --texto: #ffffff;
+        --cor1: #e21;
+        --cor2: #900;
+        --subtitulo: #ffffff33;
+        --onda: url('../img/onda-dark.svg');
+    }
+}   
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
 body {
-    background-color: #f7f7f7;
-
+    background-color: var(--fundo1);
+    color: var(--texto);
 }
 
 h1{
@@ -21,7 +43,7 @@ header {
     padding: 60px;
 }
 
-header img {
+header svg {
     display: block;
     margin: auto;
 }
@@ -36,18 +58,18 @@ header nav ul {
 
 header>nav a {
     text-decoration: none;
-    color: #000;
-    background: #fff;
+    background: var(--fundo2);
+    color: var(--texto);
     padding: 15px 30px;
     display: inline-block;
     margin-top: 60px;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--fundo2);
     text-transform: uppercase;
 }
 
 header>nav a:hover {
-    border-color: #e21;
+    border-color: var(--cor1);
 }
 
 /* INICIO DO MAIN */
@@ -60,7 +82,7 @@ header>nav a:hover {
 }
 
 .bloco1 {
-    background-color: #fff;
+    background-color: var(--fundo2);
     display: grid;
     text-align: right;
     place-content: center end;
@@ -74,7 +96,7 @@ header>nav a:hover {
     height: 4px;
     width: 60px;
     display: block;
-    background-color: #e21;
+    background-color: var(--cor1);
     position: absolute;
     top: 30px;
     right: -30px;
@@ -82,7 +104,7 @@ header>nav a:hover {
 }
 
 .bloco1 a {
-    background-color: #e21;
+    background-color: var(--cor1);
     text-decoration: none;
     color: #fff;
     padding: 15px 30px;
@@ -90,12 +112,12 @@ header>nav a:hover {
     border-radius: 5px;
 }
 .bloco1 a:hover {
-    background-color: #900;
+    background-color: var(--cor2);
 }
 
 .bloco2 img{
     display: block;
-    background-color: #fff;
+    background-color: var(--fundo2);
     width: 100%;
 }
 
@@ -108,28 +130,28 @@ header>nav a:hover {
     font-size: 4rem;
     text-transform: uppercase;
     text-align: right;
-    color: #e7e7e7;
-    background-image: url('../img/onda.svg');
+    color: var(--subtitulo);
+    background-image: var(--onda);
     padding: 40px;
 }
 
 .bloco4 {
-    background-color: #fff;
+    background-color: var(--fundo2);
     display: grid;
     padding: 40px;
 }
 .bloco4 section:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--fundo1);
 }
 .bloco4 section {
     display: grid;
     grid-template-columns: auto 1fr;
     padding: 20px;
     gap: 10px 20px;
-    border-left: 4px solid #ffffff00;
+    border-left: 4px solid transparent;
 }
 .bloco4 section:hover {
-    border-left-color: #e21;
+    border-left-color: var(--cor1);
 }
 
 .bloco4 section p {
@@ -138,7 +160,7 @@ header>nav a:hover {
 
 
 footer p {
-    background-color: #fff;
+    background-color: var(--fundo2);
     padding: 40px;
     text-align: center;
     margin-top: 60px;
