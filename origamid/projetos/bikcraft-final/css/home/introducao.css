@@ -1,4 +1,4 @@
-.introducao-container {
+.introducao-bg {
     background-color: var(--cor-12);
     box-shadow: inset 0 -120px var(--cor-0);
 }
@@ -8,10 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    padding: 0px 20px;
-    margin: auto;
 }
 
 .introducao-conteudo {
@@ -33,12 +29,13 @@
 
 .introducao-img img{
     height: 100%;
+    width: 100%;
     border-radius: 4px;
     object-fit: cover;
 }
 
 @media (max-width: 800px) {
-    .introducao-container {
+    .introducao-bg {
         background-color: var(--cor-11);
         padding-top: 40px;
         box-shadow: inset 0px -60px var(--cor-0);

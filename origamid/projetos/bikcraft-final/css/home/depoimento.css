@@ -1,0 +1,106 @@
+.depoimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cor-p1);
+    overflow: hidden;
+}
+
+.depoimento-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 80px 80px;
+    align-self: end;
+    position: relative;
+}
+
+.depoimento-conteudo::before {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 55px;
+    background: url('/img/dec/top-left-p.svg') no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.depoimento-conteudo::after {
+    content: "";
+    display: block;
+    height: 55px;
+    width: 55px;
+    background: url('/img/dec/bottom-right.svg') no-repeat;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+.depoimento-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.depoimento-conteudo blockquote {
+    color: var(--cor-p5);
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.25;
+    margin-bottom: 32px;
+    max-width: 32ch;
+    position: relative;
+    align-self: end;
+}
+
+
+.depoimento-conteudo p::before {
+    content: '“';
+    display: inline-block;
+    font-size: 5rem;
+    position: absolute;
+    color: var(--cor-p2);
+    left: -50px;
+    top: -20px;
+}
+
+.depoimento-conteudo p::after {
+    content: '”';
+    display: inline-block;
+    font-size: 5rem;
+    position: absolute;
+    color: var(--cor-p2);
+}
+
+.depoimento-conteudo span {
+    color: var(--cor-p4);
+    align-self: end;
+}
+
+@media (min-width: 1200px) {
+    .depoimento-img img{
+        max-height: 520px;
+    }
+}
+
+@media (max-width: 800px) {
+    .depoimento {
+    grid-template-columns: 1fr;
+    }
+    .depoimento-img {
+        height: 200px;
+    }
+    .depoimento-conteudo {
+        padding: 40px 20px;
+        margin: auto;
+    }
+    .depoimento-conteudo blockquote {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .depoimento-conteudo span {
+        align-self: center;
+    }
+}

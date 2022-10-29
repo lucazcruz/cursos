@@ -9,7 +9,7 @@
     max-width: 1200px;
     box-sizing: border-box;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: var(--cor-11);
 }
 .bicicletas h2 span {
@@ -19,6 +19,7 @@
 .bicicletas-lista {
     display: flex;
     gap: 40px;
+    padding: 20px;
     overflow-x: auto;
 }
 
@@ -53,4 +54,13 @@
 
 .bicicletas-lista a:hover h3::before {
     width: 20px;
+}
+
+@media (max-width: 800px) {
+    .bicicletas {
+        padding: 60px 0px 60px 0px;
+    }   
+    .bicicletas-lista {
+        gap: 20px;
+    }
 }
