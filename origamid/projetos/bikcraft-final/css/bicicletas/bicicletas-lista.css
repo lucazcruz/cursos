@@ -10,11 +10,8 @@
     box-sizing: border-box;
     margin: auto;
     margin-bottom: 20px;
-    color: var(--cor-11);
 }
-.bicicletas h2 span {
-    color: var(--cor-p1);
-}
+
 
 .bicicletas-lista {
     display: flex;

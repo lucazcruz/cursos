@@ -15,15 +15,10 @@
     padding-bottom: 200px;
 }
 .introducao-conteudo h1 {
-    color: var(--cor-0);
     margin-bottom: 32px;
 }
 
-.introducao-conteudo span {
-    color: var(--cor-p1);
-}
 .introducao-conteudo p {
-    color: var(--cor-5);
     margin-bottom: 20px;
 }
 

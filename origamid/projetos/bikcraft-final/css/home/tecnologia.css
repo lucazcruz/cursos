@@ -1,7 +1,6 @@
 .tecnologia-bg {
     background-color: var(--cor-11);
-    color: var(--cor-0);
-    box-shadow: inset 0px 120px var(--cor-0), inset 0px -80px var(--cor-0);
+    box-shadow: inset 0px 120px var(--cor-0), inset 0px -120px var(--cor-0);
 }
 
 .tecnologia {
@@ -11,26 +10,25 @@
 }
 
 .tecnologia-conteudo {
-    padding: 160px 0px;
+    padding: 180px 0px;
 }
 
 .tecnologia-conteudo span {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--cor-5);
 }
+
 .tecnologia-conteudo h2 {
     margin-bottom: 32px;
 }
+
 .tecnologia-conteudo > p {
     margin-bottom: 20px;
-    color: var(--cor-5);
 }
 
 .tecnologia-conteudo a {
     margin-bottom: 80px;
 }
-
 
 .modelos {
     display: flex;
@@ -44,9 +42,6 @@
 .modelos h3 {
     margin-bottom: 8px;
     max-width: max-content;
-}
-.modelos p {
-    color: var(--cor-5);
 }
 
 .tecnologia-img img{

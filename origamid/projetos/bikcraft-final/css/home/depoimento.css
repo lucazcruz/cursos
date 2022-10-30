@@ -43,7 +43,6 @@
 }
 
 .depoimento-conteudo blockquote {
-    color: var(--cor-p5);
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     font-weight: 900;
@@ -74,7 +73,6 @@
 }
 
 .depoimento-conteudo span {
-    color: var(--cor-p4);
     align-self: end;
 }
 
