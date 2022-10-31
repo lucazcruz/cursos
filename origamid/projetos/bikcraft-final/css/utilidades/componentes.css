@@ -29,6 +29,20 @@
     background: var(--cor-9);
 }
 
+.seta::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    background-image: url('../../img/icones/seta.svg');
+    margin-left: 18px;
+    transition: transform .3s;
+}
+
+.seta:hover::after{
+    transform: translate(4px);
+}
+
 .link {
     display: inline-block;
     color: var(--cor-p1);
@@ -55,3 +69,4 @@
         font-size: 1rem;
     }
 }
+

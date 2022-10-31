@@ -26,3 +26,24 @@ img[src$=".jpg"] {
     border-radius: 4px;
 }
 
+.titulo-bg {
+    background-color: var(--cor-11);
+}
+
+.titulo.container {
+    padding: 60px 20px;
+}
+.titulo p {
+    margin-bottom: 4px;
+}
+
+
+@media (max-width: 800px) {
+    .titulo.container {
+        padding: 40px 20px;
+    }
+    .titulo p {
+        font-size: 1rem;
+        text-transform: lowercase;
+    }
+}
