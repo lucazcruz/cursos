@@ -1,42 +1,53 @@
-#bicicletas .introducao-bg {
+.seguro-bg {
     background-color: var(--cor-11);
     box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
 }
 
+.seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
 
-#bicicletas .introducao-conteudo {
-    align-self: end;
+.seguro-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.seguro-conteudo {
     padding-top: 180px;
     padding-bottom: 180px;
 }
 
-@media (max-width: 800px) {
-
-    #bicicletas .introducao {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
+.seguro-conteudo h2 {
+    margin-bottom: 32px;
+}
+.seguro-conteudo p {
+    margin-bottom: 20px;
 }
 
+
 @media (max-width: 600px) {
-    #bicicletas .introducao-bg {
-        box-shadow: initial;
+    .seguro-bg {
+        box-shadow: inset 0 -60px var(--cor-12);
     }
 
-    #bicicletas  .introducao {
+     .seguro {
         grid-template-columns: 1fr;
         gap: 32px;
+        padding-top: 40px;
     }
 
-    #bicicletas .introducao-img {
+    .seguro-img {
         grid-row: 2;
         height: 100%;
         width: 100%;
     }
-    #bicicletas .introducao-conteudo {
+    .seguro-conteudo {
         padding-top: 0px;
         padding-bottom: 0px;
+        
     }
 
 }

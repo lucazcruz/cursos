@@ -8,6 +8,7 @@
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: start;
 }
 
 .bicicletas-titulo {
@@ -18,7 +19,6 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    align-content: start;
 }
 
 .bicicletas-img img {
@@ -35,15 +35,11 @@
     margin-bottom: 32px;
 }
 
-.bicicletas-conteudo h2 {
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
 
 .bicicletas-comprar {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px;
+    gap: 8px 12px;
     align-items: center;
     justify-items: start;
     margin-bottom: 40px;
@@ -59,6 +55,12 @@
     padding: 4px 8px;
     align-self: center;   
     background-color: var(--cor-12);
+    border-radius: 4px;
+}
+
+.bicicletas-conteudo h2 {
+    text-transform: uppercase;
+    margin-bottom: 12px;
 }
 
 .bicicletas-informacoes {
@@ -68,6 +70,7 @@
     background-color: var(--cor-12);
     padding: 32px;
     margin-bottom: 40px;
+    border-radius: 4px;
 }
 
 .bicicletas-informacoes img {
@@ -82,6 +85,7 @@
 .ficha-tecnica {
     padding: 32px;
     background-color: var(--cor-12);
+    border-radius: 4px;
 }
 
 .ficha-tecnica li {
@@ -107,15 +111,22 @@
 @media (max-width: 800px) {   
     .bicicletas {
         grid-template-columns: 1fr;
-    }
-    .bicicletas-conteudo {
-     grid-area: 2;   
-    }
-    .bicicletas {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .bicicletas-conteudo {
+     grid-row: 2;   
+    }
+
     #bicicletas .bicicletas-home {
         padding-top: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .bicicletas-informacoes,
+    .bicicletas-comprar {
+        grid-template-columns: 1fr;
     }
 }
