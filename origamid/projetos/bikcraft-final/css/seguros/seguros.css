@@ -1,7 +1,16 @@
 .seguros-bg {
     background-color: var(--cor-11);
-    padding: 60px 0px;
 }
+
+.seguros-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#seguros .seguros-container {
+    padding-top: 0px
+}
+
 .seguros-container h2 {
     margin-bottom: 40px;
 }
