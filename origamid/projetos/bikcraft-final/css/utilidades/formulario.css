@@ -1,0 +1,47 @@
+.formulario {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario label {
+    display: block;
+    color: var(--cor-11);
+    font: 600 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+textarea {
+    padding: 12px;
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    border-radius: 4px;
+    border: 1px solid var(--cor-2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--cor-p1);
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.formulario .btn {
+    max-width: max-content;
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .col-2 {
+        grid-column: 1;
+    }
+}

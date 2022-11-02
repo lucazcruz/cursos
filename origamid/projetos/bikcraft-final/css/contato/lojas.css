@@ -1,0 +1,44 @@
+.lojas-locais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.lojas-locais h2 {
+    grid-column: span 2;
+}
+
+.loja-rj,
+.loja-sp {
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.loja-img img {
+    border-radius: 4px 4px 0 0;
+}
+
+.loja-dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 18px;
+    padding: 32px;
+}
+
+.loja-dados h3 {
+    grid-column: span 2;
+
+}
+
+.loja-dados a {
+    display: block;
+}
+
+.contato-dados {
+    display: grid;
+    gap: 8px;
+    padding-left: 12px;
+    border-left: 2px solid var(--cor-2);
+}
