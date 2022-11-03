@@ -13,12 +13,13 @@
 
 .formulario input[type="text"],
 .formulario input[type="email"],
-textarea {
-    padding: 12px;
+.formulario textarea {
+    background: var(--cor-1);
     font: 400 1rem/1.5 "Roboto", sans-serif;
-    border-radius: 4px;
     border: 1px solid var(--cor-2);
+    border-radius: 4px;
     width: 100%;
+    padding: 12px;
     box-sizing: border-box;
 }
 
@@ -26,22 +27,18 @@ textarea {
 .formulario input[type="email"]:focus,
 textarea:focus {
     outline: none;
-    border: 1px solid var(--cor-p1);
+    border-color: var(--cor-p1);
+    background: var(--cor-0);
+    box-shadow: 0px 0px 0px 2px #fea;
+
 }
 
-.col-2 {
-    grid-column: span 2;
-}
-
-.formulario .btn {
-    max-width: max-content;
+.formulario .col-2 {
+    grid-column: 1/-1;
 }
 
 @media (max-width: 600px) {
     .formulario {
         grid-template-columns: 1fr;
-    }
-    .col-2 {
-        grid-column: 1;
     }
 }
