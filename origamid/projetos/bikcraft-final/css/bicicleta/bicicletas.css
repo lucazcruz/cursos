@@ -1,5 +1,5 @@
 .bicicletas-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11)  url("../../img/dec/bottom-left.svg") no-repeat bottom 50px left 50px;
 }
 
 .bicicletas {

@@ -20,6 +20,7 @@ a {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 img[src$=".jpg"] {
@@ -27,7 +28,7 @@ img[src$=".jpg"] {
 }
 
 .titulo-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 50px right 20px;
 }
 
 .titulo.container {
