@@ -1,0 +1,149 @@
+#orcamento {
+    background: linear-gradient(var(--cor-11) 800px, var(--cor-1) 0px);
+}
+
+.orcamento {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 120px;
+}
+
+.orcamento h2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.orcamento h2::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 4px;
+    background-color: var(--cor-p1);
+    position: absolute;
+    left: -12px;
+}
+
+.orcamento-produto {
+    background-color: var(--cor-12);
+    padding: 60px;
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
+}
+
+.orcamento-produto input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.orcamento-produto > * {
+    grid-column: 1/-1;
+}
+
+.orcamento-produto > label {
+    grid-column: initial;
+}
+
+.orcamento-produto label {
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.orcamento-produto input:checked + label {
+    background-color: var(--cor-0);
+    color: var(--cor-11);
+}
+.orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-6);
+    border-radius: 50px;
+}
+
+.orcamento-produto input:checked + label::before {
+    border-color: var(--cor-7);
+    box-shadow: inset 0 0 0 2px var(--cor-0), inset 0 0 0 7px var(--cor-7) ;
+}
+
+.orcamento-produto label span {
+    display: none;
+}
+
+.orcamento-produto input:checked + label span {
+    display: block;
+} 
+
+.radio-detalhes {
+    /* display: grid; */
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--cor-0);
+    border-radius: 4px;
+}
+
+.radio-detalhes ul li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.radio-detalhes li img {
+    width: 16px;
+}
+
+.orcamento-dados {
+    background-color: var(--cor-0);
+    padding: 60px;
+    border-radius: 0px 4px 4px 0px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-bikcraft,
+.orcamento-seguro {
+    /* display: grid; */
+    display: none;
+    gap: 20px;
+}
+
+.orcamento-bikcraft h2,
+.orcamento-seguro h2 {
+    margin-top: 20px;
+}
+.orcamento-produto input:checked + label + .radio-detalhes,
+.orcamento-produto #bikcraft:checked ~ .orcamento-bikcraft,
+.orcamento-produto #seguro:checked ~ .orcamento-seguro {
+    display: grid;
+}
+
+@media (max-width: 1200px) {
+    .orcamento-produto,
+    .orcamento-dados {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+}
