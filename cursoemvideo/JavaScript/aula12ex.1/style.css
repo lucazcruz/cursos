@@ -26,10 +26,7 @@ h2 {
 img {
     max-width: 200px;
     border-radius: 50%;
-}
-
-.img {
-    display: none;
+    display: block;
     margin: auto;
 }
 

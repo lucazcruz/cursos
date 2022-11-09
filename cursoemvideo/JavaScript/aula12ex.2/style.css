@@ -26,7 +26,7 @@ input, #btn {
     text-align: center;
 }
 img {
-    display: none;
+    display: block;
     border-radius: 50%;
     max-width: 200px;
     margin: auto;
