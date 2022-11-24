@@ -5,10 +5,10 @@ document.querySelector('#gerar').addEventListener('click', function(){
     if(n1 == "") {
         alert('[ERROR] Campo Vazio')
     } else {
-        for(var n2 = 1; n2 <= 10; n2++) {
+        n1 = parseInt(n1)
+        for(var i = 1; i <= 10; i++) {
             var span = document.createElement('span')
-            var soma = n1 * n2
-            span.innerText= `${n1} x ${n2} = ${soma}`
+            span.innerText= `${n1} x ${i} = ${n1*i}`
             div2.appendChild(span)
         }
     }

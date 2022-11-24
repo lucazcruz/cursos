@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tabuada</title>
+    <title>Analisador de Números</title>
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Analisador de Números</h1>
     </header>
     <main>
         <div class="soma">
-            <label for="numero">Número</label>
-            <input type="number" name="numero" id="numero">
+            <label for="numero">Número (entre 1 a 100):</label>
+            <input type="number" name="numero" id="numero" min="1" max="100">
+            <button id="adicionar" class="btn">Adicionar</button>
         </div>
         <div id="div2">
-
         </div>
-        <div class="soma">
-            <button id="gerar">Gerar Tabuada</button>
+        <button id="finalizar" class="btn">Finalizar</button>
+        <div id="div3">
         </div>
     </main>
     <footer>
         <a href="https://github.com/lucazcruz">&copy;github/lucazcruz</a>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
