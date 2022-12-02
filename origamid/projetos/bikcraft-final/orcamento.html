@@ -15,6 +15,8 @@
 
     <meta name="description" content="Faça um orçamento com as melhores bikes e seguros do mercado">
     <title>Orçamento | Bikcraft</title>
+
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="orcamento">
     <header class="header-bg">
@@ -42,16 +44,16 @@
             <div class="orcamento-produto">
                 <h2 class="font1-xs cor5">bikcraft ou seguro?</h2>
 
-                <input type="radio" name="tipo" id="bikcraft" checked>
+                <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
                 <label for="bikcraft">Bikcraft</label>
 
-                <input type="radio" name="tipo" id="seguro">
+                <input type="radio" name="tipo" value="seguro" id="seguro">
                 <label for="seguro">Seguro</label>
 
                 <div class="orcamento-bikcraft">
                     <h2 class="font1-xs cor5">escolha a sua:</h2>
                     
-                    <input type="radio" name="produto" id="nimbus" checked>
+                    <input type="radio" name="produto" value="nimbus" id="nimbus">
                     <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
 
                     <div class="radio-detalhes">
@@ -64,7 +66,7 @@
                         <img src="img/bicicletas/nimbus.jpg" alt="Bicicleta Nimbus Stark da Bikcraft">
                     </div>
 
-                    <input type="radio" name="produto" id="magic">
+                    <input type="radio" name="produto" value="magic" id="magic">
                     <label for="magic">Magic Might<span>R$ 2499</span></label>
 
                     <div class="radio-detalhes">
@@ -77,7 +79,7 @@
                         <img src="img/bicicletas/magic.jpg" alt="Bicicleta Magic Might da Bikcraft">
                     </div>
 
-                    <input type="radio" name="produto" id="nebula">
+                    <input type="radio" name="produto" value="nebula" id="nebula">
                     <label for="nebula">Nebula Cosmic<span>R$ 3999</span></label>
 
                     <div class="radio-detalhes">
@@ -92,10 +94,11 @@
                 </div>
                 <div class="orcamento-seguro">
                     <h2 class="font1-xs cor5">escolha o plano</h2>
-                    <input type="radio" name="seguro" id="prata">
+
+                    <input type="radio" name="seguro" value="prata" id="prata">
                     <label for="prata">Prata<span>R$ 199</span></label>
 
-                    <input type="radio" name="seguro" id="ouro">
+                    <input type="radio" name="seguro" value="ouro" id="ouro">
                     <label for="ouro">Ouro<span>R$ 299</span></label>
 
                 </div>
@@ -183,5 +186,6 @@
             <p class="footer-copy font2-m">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html> 
