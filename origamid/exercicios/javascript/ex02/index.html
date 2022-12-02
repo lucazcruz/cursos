@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            display: none;
+        }
+        .text.ativado {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Curso de JavaScript</h1>
+    <button class="maisInfo">Mais Informações</button>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quis, dolorum dolorem laudantium enim sunt tenetur ipsum distinctio consequuntur numquam, error nostrum iure repellat eligendi repellendus ducimus dicta similique molestiae?</p>
+
+    <script>
+        const btn = document.querySelector(".maisInfo")
+        btn.addEventListener("click", ativado)
+
+        function ativado() {
+            const text = document.querySelector(".text")
+            text.classList.toggle("ativado")
+        }
+    </script>
+</body>
+</html>

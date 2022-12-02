@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="adicionar">Adicionar +1</button>
+    <div id="resultado">0</div>
+
+    <script>
+        var btn = document.querySelector("#adicionar")
+        if (btn) {
+            btn.addEventListener("click", adicionar)
+            var res = document.querySelector("#resultado")
+            var n1 = 0
+            function adicionar() {
+                if (n1 < 10) {
+                res.innerText= ++n1
+                console.log(n1)
+                } else {
+                    alert('Não é mais possível adicionar +1')
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
