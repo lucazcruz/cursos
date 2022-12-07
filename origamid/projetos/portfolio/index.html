@@ -4,153 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css" media="screen">
-    <title>Lobo - Portfólio</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Portfólio versão2</title>
 </head>
 <body>
-    <header>
-        <img src="img/marca.svg" alt="Lobo">
-        <nav class="menu">
-            <ul>
+    <header class="header">
+        <img src="img/marca.svg" alt="Logo">
+        <nav>
+            <ul class="header-menu">
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <section  class="container">
-                <div class="container-bloco1">
-                    <img src="img/perfil.jpg" alt="">
-                </div>
-                <div class="container-bloco2">
-                    <h1> <img class="detalhe" src="img/detalhe.svg" alt="">Desenvolvedor Front End & UX/UI Designer</h1>
-                    <p>Localizado no Rio de Janeiro 🏖</p>
-                </div>
-        </section>
-        <section class="container container-block">
-            <div class="container-bloco3">
-                <h2 id="experiencia">experiência</h2>
+    <main class="introducao">
+        <img src="img/perfil.jpg" alt="Lobo Cinza">
+        <div>
+            <h1>Desenvolvedor<br>Front End &<br>UX/UI Designer</h1>
+            <p>Localizado no Rio de Janeiro*-*</p>
+        </div>
+    </main>
+    <section class="experiencia">
+        <h2 id="experiencia" class="subtitulo">Experiência</h2>
+        <div>
+            <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+            <div class="empresa">
+                <span class="ano">2045</span>
+                <h3 class="empresa-titulo">Bikcraft</h3>
+                <span class="empresa-titulo">Desenvolvedor Júnior</span>
+                <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.</p>
+                <ul class="empresa-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>UX Design</li>
+                    <li>UI Design</li>
+                </ul>
             </div>
-            <div class="container-bloco4">
-                <p>Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <span class="bold1">HTML</span>, <span class="bold1">CSS</span> e <span class="bold1">JavaScript</span>. <br>Para aplicativos web como a rede social Dogs eu trabalhei no <span class="bold1">UX</span> e <span class="bold1">UI Design</span> do projeto.</p>
-                <div class="bloco4b">
-                    <div  class="bloco4-grid">
-                        <div>
-                            <h3 class="green"><span class="ano">2045</span> Bikcraft</h3>
-                            <p>No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.
-                            </p>
-                            <span class="a20">2045</span>
-                        </div>
-                        <div>
-                            <h3>Desenvolvedor Júnior</h3>
-                            <div class="bloco4-flex">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
-                                <p>UX Design</p>
-                                <p>UI Design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bloco4-grid">
-                        <div>
-                            <h3 class="green"><span class="ano  ano2">2044-45</span> Surfbot</h3>
-                            <p>Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro. O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi feito do zero.</p>
-                            <span class="a20">2044-45</span>
-                        </div>
-                        <div>
-                            <h3>Estagiário</h3>
-                            <div class="bloco4-flex">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bloco4-grid">
-                        <div>
-                            <h3 class="green"><span class="ano">2044</span> Brafé</h3>
-                            <p>Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu trabalhei na criação do email marketing e também no HTML.</p>
-                            <span class="a20">2044</span>
-                        </div>
-                        <div>
-                            <h3>Desenvolvedor Júnior</h3>
-                            <div class="bloco4-flex">
-                                <p>Email Marketing</p>
-                                <p>HTML</p>
-                                <p>UX Design</p>
-                                <p>UI Design</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="empresa">
+                <span class="ano">2044-45</span>
+                <h3 class="empresa-titulo">Surfbot</h3>
+                <span class="empresa-titulo">Estagiário</span>
+                <p class="empresa-texto">Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro. O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi feito do zero.</p>
+                <ul class="empresa-habilidades">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
             </div>
-        </section>
+            <div class="empresa">
+                <span class="ano">2044</span>
+                <h3 class="empresa-titulo">Brafé</h3>
+                <span class="empresa-titulo">Desenvolvedor Júnior</span>
+                <p class="empresa-texto">Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu trabalhei na criação do email marketing e também no HTML.</p>
+                <ul class="empresa-habilidades">
+                    <li>Email Marketing</li>
+                    <li>HTML</li>
+                    <li>UX Design</li>
+                    <li>UI Design</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class="black">
-        <section class="container2">
-            <h2 class="container2-bloco1" id="formacao">formação</h2>
-            <div class="container2-bloco2">
-                <p class="formacao">Minha mais recente experiência acadêmica foi o <span class="bold2">mestrado</span> 🎓 que fiz no exterior em <span class="bold2">UX Design</span>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
-                <ul class="flex">
-                    <li class="flex-items">
-                        <span>BACHAREL</span>
-                        <h3 class="green">Administração de Empresas</h3>
-                        <span>UFRRJ</span>
+    <section class="container-formacao">
+        <section class="formacao">
+            <h2 class="subtitulo">formação</h2>
+            <div>
+                <p class="formacao-texto">Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> 🎓 que fiz no exterior em <strong>UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+            
+                <ul class="formacao-faculdade">
+                    <li>
+                        <span class="faculdade-tipo">BACHAREL</span>
+                        <h3>Administração de Empresas</h3>
+                        <span class="faculdade-instituicao">UFRRJ</span>
                     </li>
-                    <li class="flex-items">
-                        <span>tecnólogo</span>
-                        <h3 class="green">Design Digital</h3>
-                        <span>Infnet</span>
+                    <li>
+                        <span class="faculdade-tipo">TECNÓLOGO</span>
+                        <h3>Design Digital</h3>
+                        <span class="faculdade-instituicao">Infnet</span>
                     </li>
-                    <li class="flex-items">
-                        <span>MESTRE</span>
-                        <h3 class="green">User Experience Design</h3>
-                        <span>UCLL</span>
+                    <li>
+                        <span  class="faculdade-tipo">MESTRE</span>
+                        <h3>User Experience Design</h3>
+                        <span class="faculdade-instituicao">UCLL</span>
                     </li>
                 </ul>
-                <div class="grid">
-                    <ul>
-                        <h3 class="cursos-img">CURSOS INTENSIVOS</h3>
-                        <li  class="grid-items">
-                            <p class="bold2">UX Design & UI Design</p>
-                            <span>56h</span>
-                        </li>
-                        <li class="grid-items">
-                            <p class="bold2">Front End para Iniciantes</p>
-                            <span>72h</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <h3 class="idiomas-img">IDIOMAS</h3>
-                        <li class="grid-items">
-                            <p><span class="bold2">Inglês</span> / Fluente</p>
-                        </li>
-                        <li class="grid-items">
-                            <p><span class="bold2">Espanhol</span> / Intermédiario</p>
-                        </li>
-                    </ul>
+                <div class="formacao-extra">
+                    <div class="cursos">
+                        <h3>cursos intensivos</h3>
+                        <ul>
+                            <li>UX Design & UI Design<span>56h</span></li>
+                            <li>Front End para Iniciantes<span>72h</span></li>
+                        </ul>
+                    </div>
+                    <div class="idiomas">
+                        <h3>idiomas</h3>
+                        <ul>
+                            <li>Inglês <span>/ Fluente</span></li>
+                            <li>Espanhol <span>/ Intermediário</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </section>
-    <footer>
-        <section class="footer-grid">
-                <div class="footer-bloco1">
-                    <img class="detalhe2" src="img/detalhe.svg" alt="">
-                    <p>Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
-                </div>
-                <div class="footer-bloco2" id="contato">
-                    <ul>
-                        <li>lobo@gmail.com</li>
-                        <li>+55 74 9999-9999</li>
-                        <li>@instagram</li>
-                    </ul>
-                </div>
-                <p>Lobo. Alguns direitos reservados.</p>
+    <footer class="container-footer">
+        <section class="footer">
+              <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
+            <ul class="footer-contato">
+                <li>lobo@email.com</li>
+                <li>+55 21 9999-9999</li>
+                <li><a href="#">@instagram</a></li>
+            </ul>
+            <p>Lobo. Alguns direitos reservados.</p>
         </section>
     </footer>
 </body>

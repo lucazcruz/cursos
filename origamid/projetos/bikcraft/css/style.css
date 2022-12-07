@@ -1,109 +1,39 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body {
-    margin: 0; 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f7f7;
-}
+@import 'global/global.css';
+@import 'global/header.css';
+@import 'home/footer.css';
 
-p {
-    font-size: 20px;
-}
+/* Utilidades */
+@import 'utilidades/cores.css';
+@import 'utilidades/tipografia.css';
+@import 'utilidades/componentes.css';
+@import 'utilidades/formulario.css';
 
-header {
-    padding: 60px;
-    text-align: center;
-}
+/* Home */
+@import 'home/introducao.css';
+@import 'home/tecnologia.css';
+@import 'home/parceiros.css';
+@import 'home/depoimento.css';
 
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.menu a {
-    padding: 15px 30px;
-    margin-top: 60px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
+/* Bicicletas */
+@import 'bicicletas/bicicletas-lista.css';
+@import 'bicicletas/bicicletas.css';
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1000px;
-    margin: auto;
-}
+/* Bicicleta */
+@import 'bicicleta/bicicletas.css';
+@import 'bicicleta/seguro.css';
 
-.bloco1 {
-    background-color: #fff;
-    display: grid;
-    gap: 20px;
-    text-align: right;
-    align-content: center;
-    justify-items: end;
-    padding: 40px;
-    position: relative;
-}
-.red{
-    display: inline-block;
-    background-color: #e21;
-    width: 80px;
-    height: 5px;
-    position: absolute;
-    top: 30px;
-    right: -40px;
-}
-.bloco1 a {
-    text-decoration: none;
-    background-color: #e21;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
 
-.bloco2 {
-    width: 100%;
-    display: block;
-}
+/* Seguros */
+@import 'seguros/seguros.css';
+@import 'seguros/vantagens.css';
+@import 'seguros/perguntas.css';
 
-.bloco3 {
-    align-self: center;
-}
+/* Termos */
+@import 'termos/termos.css';
 
-.bloco3 h2{
-    text-transform: uppercase;
-    font-size: 64px;
-    color: #c6c6c6;
-    padding: 40px;
-    text-align: right;
-}
+/* Contato */
+@import 'contato/contato.css';
+@import 'contato/lojas.css';
 
-.bloco4 {
-    display: grid;
-    padding: 40px;
-    background-color: #fff;
-}
-.bloco4a {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 20px;
-    padding: 20px;
-}
-.bloco4a p {
-    grid-column: 2;
-}
-
-footer {
-    margin-top: 60px;
-    padding: 40px;
-    background-color: #fff;
-    text-align: center;
-
-}
+/* Orcamento */
+@import 'orcamento/orcamento.css';
