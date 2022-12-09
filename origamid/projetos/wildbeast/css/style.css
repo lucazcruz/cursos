@@ -6,7 +6,6 @@
 }
 body {
     font-family: 'Vollkorn', sans-serif;
-    color: #000000b3;
 }
 a {
     display: block;
@@ -25,8 +24,9 @@ img {
 }
 p {
     font-size: 1.2rem;
-    line-height: 1.60;
-    letter-spacing: -0.095px;
+    line-height: 1.6;
+    letter-spacing: -0.005rem;
+    color: #000000b3;
 }
 .layout {
     display: grid;
@@ -42,6 +42,7 @@ p {
 }
 .row2 {
     grid-row: span 2;
+    align-self: end;
 }
 
 /* HEADER */
@@ -54,8 +55,8 @@ header {
     grid-template-columns: 1fr auto;
     align-items: center;
 }
-header img {
-    width: 200px;
+.logo {
+    max-width: 200px;
 }
 .header-menu {
     display: grid;
@@ -64,10 +65,10 @@ header img {
 }
 .header-menu a {
     padding: 10px;
-    
     font-size: 1.125rem;
     background: #0000001a;
     color: #ffffff;
+    transition: .1s;
 }
 .header-menu a:hover {
     background: #0000006a;
@@ -83,7 +84,7 @@ header img {
     max-width: 140px;
     min-width: 100px;
     padding: 20px;
-    box-shadow: 5px 5px 15px #0000001a;
+    box-shadow: 5px 5px 15px 0px #2c2c2c26;
     margin-bottom: 30px;
     transition: 0.3s;
 }
@@ -124,56 +125,52 @@ p.destaque {
     text-align: center;
     place-self: start;
 }
-.animal-info span {
-    display: block;
+.animal-info>div {
+    min-width: 80px;
+    border-radius: 5px;
+    color: #b07dfb;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 0px #2c2c2c26;
 }
 .animal-info .span1 {
-    font-size: 3rem;
-    min-width: 80px;
-    min-height: 48px;
-    color: #b07dfb;
-
-    border-radius: 5px 5px 0 0;
     background: linear-gradient(135deg , #8844ee, #b07dfb);
+    display: block;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 10px 0;
 }
 .animal-info .span2 {
-    color: #b07dfb;
+    display: block;
+    background: #fff;
     padding: 5px;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 5px 5px 15px #0000001a;
+    box-shadow: 5px 5px 15px 0px #0000001a;
 }
-.main blockquote {
+.main blockquote, .lista {
+    box-shadow: 5px 5px 15px 0px #2c2c2c4d;
     background: linear-gradient(135deg , #8844ee, #b07dfb);
-    color: #ffffff;
     padding: 30px;
     border-radius: 5px;
+    color: #ffffff;
+    align-self: start;
 }
 .main blockquote p {
+    color: inherit;
     font-style: italic;
     font-size: 1.5rem;
-    letter-spacing: -0.12px;
-    line-height: 1.6;
     max-width: 35ch;
     text-align: center;
     margin: auto;
-}
-.lista {
-    background: linear-gradient(to bottom , #8844ee, #b07dfb);
-    color: #ffffff;
-    padding: 30px;
-    border-radius: 5px;
-    align-self: start;
 }
 .lista li {
     font-family: Courier, monospace;
     font-size: 1.125rem;
     padding: 15px;
 }
-.lista li {
-    border-bottom: 2px solid #b07dfb;
+.lista li + li {
+    border-top: 2px solid #b07dfb;
 }
-.informações p:first-child {
-    margin-bottom: 30px;
+.informações p + p {
+    margin-top: 30px;
 }
 
 /* ASIDE */
@@ -225,9 +222,8 @@ footer {
 }
 @media (max-width: 600px) {
     header {
-        grid-template-columns: max-content;
+        grid-template-columns: 1fr;
         gap: 20px;
-        justify-content: center;
         justify-items: center;
     }
     .main {
