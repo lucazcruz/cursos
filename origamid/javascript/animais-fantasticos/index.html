@@ -7,6 +7,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>document.querySelector('html').classList.add('js')</script>
     <title>Animais Fantásticos</title>
 </head>
 <body>
@@ -18,9 +20,9 @@
             <li><a href="#">dev →</a></li>
         </ul>
     </nav>
-    <section class="grid-section">
+    <section class="grid-section smooth-scroll" id="animais">
         <h1>Animais Fantásticos</h1>
-        <ul class="lista-img">
+        <ul class="lista-img js-tabmenu">
             <li><img src="img/imagem1.jpg"></li>
             <li><img src="img/imagem2.jpg"></li>
             <li><img src="img/imagem3.jpg"></li>
@@ -28,7 +30,7 @@
             <li><img src="img/imagem5.jpg"></li>
             <li><img src="img/imagem6.jpg"></li>
         </ul>
-        <div class="animais" id="animais">
+        <div class="animais js-tabcontent">
             <section>
                 <h2>raposa</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
@@ -73,7 +75,7 @@
             </section>
         </div>
     </section>
-    <section class="faq grid-section" id="faq">
+    <section class="faq grid-section smooth-scroll" id="faq">
         <h1>faq</h1>
         <dl>
             <dt>Qual a idade dos animais?</dt>
@@ -89,7 +91,7 @@
             <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
         </dl>
     </section>
-    <section class="contato grid-section" id="contato">
+    <section class="contato grid-section smooth-scroll" id="contato">
         <h1>contato</h1>
         <img src="img/mapa.png">
         <ul>
@@ -102,5 +104,6 @@
     <footer>
         <p>&copy;github.com/lucazcruz</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
